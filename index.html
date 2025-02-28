@@ -19,58 +19,6 @@
         </div>
       </header>
 
-      <div class="data-controls">
-        <div style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%">
-          <div class="search-container">
-            <input
-              type="text"
-              id="playerSearch"
-              placeholder="Search player..."
-            />
-            <span class="search-icon">🔍</span>
-          </div>
-          <select id="guildFilter">
-            <option value="all">All Guilds</option>
-            <option value="BobaCats">BobaCats Only</option>
-            <option value="Eternity">Eternity Only</option>
-          </select>
-          <select id="fieldFilter">
-            <option value="all">All Fields</option>
-            <option value="main">Main Field</option>
-            <option value="secondary">Secondary Field</option>
-          </select>
-          <select id="statFilter">
-            <option value="all">All Stats</option>
-            <option value="kills">High Kills</option>
-            <option value="assists">High Assists</option>
-            <option value="kda">Best K/D/A Ratio</option>
-            <option value="score">Top Score</option>
-          </select>
-        </div>
-        <div
-          style="
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            width: 100%;
-            margin-top: 10px;
-          "
-        >
-          <div class="date-range">
-            <label for="dateRange">Date Filter:</label>
-            <select id="dateFilter">
-              <option value="all">All Matches</option>
-              <option value="latest">Latest Match</option>
-              <option value="custom">Custom Range</option>
-            </select>
-            <input type="date" id="startDate" disabled />
-            <span>to</span>
-            <input type="date" id="endDate" disabled />
-          </div>
-          <button id="resetFilters">Reset Filters</button>
-        </div>
-      </div>
-
       <div class="panels">
         <div class="panel">
           <h2>
@@ -220,7 +168,61 @@
             </div>
           </div>
         </div>
+      </div>
 
+      <div class="data-controls">
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%">
+          <div class="search-container">
+            <input
+              type="text"
+              id="playerSearch"
+              placeholder="Search player..."
+            />
+            <span class="search-icon">🔍</span>
+          </div>
+          <select id="guildFilter">
+            <option value="all">All Guilds</option>
+            <option value="BobaCats">BobaCats Only</option>
+            <option value="Eternity">Eternity Only</option>
+          </select>
+          <select id="fieldFilter">
+            <option value="all">All Fields</option>
+            <option value="main">Main Field</option>
+            <option value="secondary">Secondary Field</option>
+          </select>
+          <select id="statFilter">
+            <option value="all">All Stats</option>
+            <option value="kills">High Kills</option>
+            <option value="assists">High Assists</option>
+            <option value="kda">Best K/D/A Ratio</option>
+            <option value="score">Top Score</option>
+          </select>
+        </div>
+        <div
+          style="
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 10px;
+          "
+        >
+          <div class="date-range">
+            <label for="dateRange">Date Filter:</label>
+            <select id="dateFilter">
+              <option value="all">All Matches</option>
+              <option value="latest">Latest Match</option>
+              <option value="custom">Custom Range</option>
+            </select>
+            <input type="date" id="startDate" disabled />
+            <span>to</span>
+            <input type="date" id="endDate" disabled />
+          </div>
+          <button id="resetFilters">Reset Filters</button>
+        </div>
+      </div>
+
+      <div class="panels">
         <div class="panel">
           <h2>
             <span id="tableTitle">All Players</span>
